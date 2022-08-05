@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp" >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/item_image"
+        android:clipToOutline="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/food1"></ImageView>
+
+    <TextView
+        android:id="@+id/item_off"
+        android:layout_width="40dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/discount_tag"
+        android:text="20% OFF"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="9dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eggers Madhouse"
+        android:textStyle="bold|normal"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/img"
+        />
+    <TextView
+        android:id="@+id/item_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fast Food"
+        android:textStyle="normal|bold"
+        android:textColor="#ccd1d4"
+        android:textSize="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/img"
+        android:layout_below="@+id/item_name"
+        />
+
+    <TextView
+        android:id="@+id/item_costDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_category"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/img"
+        android:text="Cost $200 for one"
+        android:textColor="#ccd1d4"
+        android:textSize="15dp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/item_minDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_costDetails"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/img"
+        android:text="Min $100.Avg 45 min.Pay Online/Cash"
+        android:textSize="15dp"
+        android:textStyle="normal|bold" />
+    <TextView
+        android:id="@+id/item_discountDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20% off -auto applies during checkout"
+        android:textColor="#55bc7e"
+        android:textSize="15dp"
+        android:layout_marginLeft="5dp"
+        android:textStyle="normal|bold"
+        android:layout_toRightOf="@+id/img"
+        android:layout_below="@+id/item_minDetails"
+        />
+
+    <TextView
+        android:id="@+id/item_rating"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="360dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rating_tag"
+        android:clipToOutline="true"
+        android:text="4.1"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+</RelativeLayout>

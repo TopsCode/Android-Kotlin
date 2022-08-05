@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/ed_username_e"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/inputfield"
+        android:hint="Username"
+        android:drawablePadding="6dp"
+        android:drawableStart="@drawable/profile"
+        android:padding="16dp"
+        />
+    <EditText
+        android:id="@+id/ed_email_e"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/inputfield"
+        android:hint="Email"
+        android:drawablePadding="6dp"
+        android:drawableStart="@drawable/profile"
+        android:padding="16dp"
+        />
+    <EditText
+        android:id="@+id/ed_password_e"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/inputfield"
+        android:hint="Password"
+        android:drawablePadding="6dp"
+        android:drawableStart="@drawable/profile"
+        android:padding="16dp"
+        />
+    <EditText
+        android:id="@+id/ed_contact_e"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/inputfield"
+        android:hint="Contact"
+        android:drawablePadding="6dp"
+        android:drawableStart="@drawable/profile"
+        android:padding="16dp"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_update_e"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Update"
+        app:cornerRadius="150dp"
+        android:backgroundTint="@color/colorPrimary"
+        />
+
+</LinearLayout>

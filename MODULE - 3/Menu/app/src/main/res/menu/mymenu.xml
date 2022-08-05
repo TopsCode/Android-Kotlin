@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:title="Pop Up Menu"
+        android:id="@+id/op_popupmenu"/>
+    <item android:title="Chat"
+        android:id="@+id/op_chat"/>
+    <item android:title="Setting"
+        android:id="@+id/op_setting"/>
+    <item
+        android:title="Search"
+        android:icon="@drawable/ic_baseline_search_24"
+        app:showAsAction="always"
+        />
+</menu>

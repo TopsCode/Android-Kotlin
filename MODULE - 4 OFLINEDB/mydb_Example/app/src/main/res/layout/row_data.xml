@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+    <TextView
+        android:id="@+id/tv_display_username"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:drawableStart="@drawable/profile"
+        android:gravity="center"
+        android:text="username"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/tv_display_email"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Email"
+        android:drawableStart="@drawable/email"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:id="@+id/tv_display_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:drawableStart="@drawable/call"
+        android:text="Mobile"
+        android:textSize="20dp"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Edit"
+                app:cornerRadius="150dp"
+
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_delete"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Delete"
+                app:cornerRadius="150dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

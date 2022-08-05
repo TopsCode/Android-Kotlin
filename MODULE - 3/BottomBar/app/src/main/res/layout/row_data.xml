@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:layout_margin="20dp">
+    <ImageView
+        android:id="@+id/promImg"
+        android:layout_width="250dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center|top"
+        android:layout_height="100dp"
+        android:src="@mipmap/pubg"
+        android:scaleType="fitXY"
+        android:background="@drawable/curvecorner"
+        android:clipToOutline="true"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <ImageView
+            android:id="@+id/main_img"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/curvecorner"
+            android:clipToOutline="true"
+            android:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="120dp"
+            android:layout_toRightOf="@+id/main_img"
+
+            android:text="Pubg:Battleground"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/title"
+
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/main_img"
+            android:text="Action"
+            android:textSize="13dp"
+            android:textStyle="bold|normal" />
+        <TextView
+            android:id="@+id/subcategory"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/title"
+
+
+            android:layout_toRightOf="@+id/category"
+            android:text="Tactical Shooter"
+            android:textSize="13dp"
+            android:textStyle="bold|normal" />
+
+        <TextView
+            android:id="@+id/rating"
+            android:layout_width="35dp"
+            android:layout_height="13dp"
+            android:layout_below="@+id/category"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/main_img"
+            android:text="4.4"
+            android:textSize="11dp"
+            android:textStyle="normal"
+            android:drawableEnd="@drawable/ic_baseline_star_24"
+            android:textAlignment="center"
+            />
+        <TextView
+            android:id="@+id/size"
+            android:layout_width="35dp"
+            android:layout_height="13dp"
+            android:layout_below="@+id/category"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/rating"
+            android:text="840MB"
+            android:textSize="11dp"
+            android:textStyle="normal"
+
+            android:textAlignment="center"
+            />
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
